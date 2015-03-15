@@ -7,6 +7,6 @@ a {
     
     &:hover,
     &:focus {
-        color: lighten($blue, 20%);
+        color: darken($blue, 8%);
     }
 }

@@ -1,0 +1,45 @@
+.page--player__header {
+	@include page-min-width;
+	padding: em(20px, 16px) em(20px, 16px);
+
+	&__inner {
+		@include page-max-width;
+		text-align: center;
+	}
+
+	&__sponsor,
+	&__sponsor-image,
+	&__presents,
+	&__artist {
+		display: block;
+	}
+
+	&__sponsor {
+		margin: 0 auto;
+		max-width: em(400px, 16px);
+		max-height: em(70px, 16px);
+	}
+
+	&__sponsor__image {
+		max-width: 100%;
+		max-height: 100%;
+	}
+
+	&__presents {
+		font-size: em(12px, 16px);
+		color: $gray-medium;
+		margin: em(20px, 12px) 0;
+		text-transform: uppercase;
+		letter-spacing: 0.08em;
+		font-weight: $semi-bold;
+	}
+
+	&__artist {
+		font-size: em(24px, 16px);
+		font-weight: $extra-bold;
+	}
+
+	&__date-location {
+		font-size: em(14px, 16px);
+	}
+}
