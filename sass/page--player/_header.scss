@@ -37,6 +37,10 @@
 	&__artist {
 		font-size: em(24px, 16px);
 		font-weight: $extra-bold;
+
+		@include bp-med {
+			font-size: em(36px, 16px);
+		}
 	}
 
 	&__date-location {

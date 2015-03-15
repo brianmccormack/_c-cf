@@ -1,5 +1,9 @@
 @mixin bp-min {
-	@media all and (min-width: $bp-min) { @content; }
+	@media screen and (min-width: $bp-min) { @content; }
+}
+
+@mixin bp-med {
+	@media screen and (min-width: $bp-med) { @content; }
 }
 
 
@@ -12,15 +16,7 @@
 
 //Breakpoints
 	$bp-min : 20em; // 320px
-	// $bp-small-2 : 29.75em;
-	// $bp-small-3 : 39.8em;
-	// $bp-med : 46.8em;
-	// $bp-med-2 : 48em;
-	// $bp-large : 50em;
-	// $bp-large-2 : 66em;
-	// $bp-xl : 73em;
-	// $bp-xxl : 89em;
-	// $bp-xxxl : 93em;
+	$bp-med : 48em; // 768px
 	$bp-max : 64em; // 1024px
 
 
