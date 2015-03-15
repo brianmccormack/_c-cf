@@ -1,0 +1,11 @@
+body {
+	font: 100% $font;
+	-webkit-text-size-adjust: 100%;
+	color: $black-80;
+	@include better-font-rendering;
+
+	@include print {
+		color: $black;
+		background: $white;
+	}
+}

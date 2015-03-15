@@ -1,0 +1,9 @@
+.global-nav {
+	@include page-min-width;
+	background: $black;
+	padding: 20px 0;
+
+	&__inner {
+		@include page-max-width;
+	}
+}

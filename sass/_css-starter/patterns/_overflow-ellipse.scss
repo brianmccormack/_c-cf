@@ -1,0 +1,7 @@
+@mixin overflow-ellipse {
+	white-space: nowrap;
+	overflow: hidden;
+	text-overflow: ellipsis;
+	// define width
+	// display inline-block or block
+}
