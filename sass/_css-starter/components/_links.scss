@@ -1,0 +1,12 @@
+a {
+    color: $blue;
+    text-decoration: none;
+    outline: 0;
+    cursor: pointer;
+	background: transparent;
+    
+    &:hover,
+    &:focus {
+        color: lighten($blue, 20%);
+    }
+}

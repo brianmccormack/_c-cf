@@ -1,21 +1,22 @@
 // Patterns
-@import "_css-starter/patterns/clearfix";
-@import "_css-starter/patterns/colors";
-@import "_css-starter/patterns/font";
-@import "_css-starter/patterns/font-size";
-@import "_css-starter/patterns/font-rendering";
-@import "_css-starter/patterns/overflow-ellipse";
-@import "_css-starter/patterns/triangle";
-@import "_css-starter/patterns/media-queries";
-@import "_css-starter/patterns/retina-images";
-@import "_css-starter/patterns/page-min-width";		// sets min-width for container spanning the entire width of the browser window
-@import "_css-starter/patterns/page-max-width";		// sets max-width for container (extend inside page-min container)
+@import "patterns/clearfix";
+@import "patterns/colors";
+@import "patterns/font";
+@import "patterns/font-size";
+@import "patterns/font-rendering";
+@import "patterns/overflow-ellipse";
+@import "patterns/triangle";
+@import "patterns/media-queries";
+@import "patterns/retina-images";
+@import "patterns/page-min-width";		// sets min-width for container spanning the entire width of the browser window
+@import "patterns/page-max-width";		// sets max-width for container (extend inside page-min container)
 
 // Base
-@import "_css-starter/base/reset";
-@import "_css-starter/base/visibility";
-@import "_css-starter/base/disabled";
-@import "_css-starter/base/body";
+@import "base/reset";
+@import "base/visibility";
+@import "base/disabled";
+@import "base/body";
 
 // Components
-@import "_css-starter/components/lists";
+@import "components/lists";
+@import "components/links";
