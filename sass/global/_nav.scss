@@ -1,16 +1,37 @@
 .global-nav {
 	@include page-min-width;
 	background: $black;
-	padding: 20px 0;
+	padding: 0 20px;
 
 	&__inner {
 		@include page-max-width;
+		padding: 20px 0;
 	}
 
 	&__logo {
 		display: block;
 		width: 140px;
 		height: 23px;
+	}
 
+	&__crowd,
+	&__reg {
+		fill: $white;
+	}
+
+	&__f {
+		fill: $red;
+	}
+
+	&__l {
+		fill: $yellow;
+	}
+
+	&__i {
+		fill: $blue;
+	}
+
+	&__k {
+		fill: $green;
 	}
 }
