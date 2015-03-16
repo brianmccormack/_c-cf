@@ -2,8 +2,16 @@
 	@media screen and (min-width: $bp-min) { @content; }
 }
 
-@mixin bp-med {
-	@media screen and (min-width: $bp-med) { @content; }
+@mixin bp-sm {
+	@media screen and (min-width: $bp-sm) { @content; }
+}
+
+@mixin bp-md {
+	@media screen and (min-width: $bp-md) { @content; }
+}
+
+@mixin bp-max {
+	@media screen and (min-width: $bp-max) { @content; }
 }
 
 
@@ -16,7 +24,8 @@
 
 //Breakpoints
 	$bp-min : 20em; // 320px
-	$bp-med : 48em; // 768px
+	$bp-sm : 30em; // 480px
+	$bp-md : 48em; // 768px
 	$bp-max : 64em; // 1024px
 
 
