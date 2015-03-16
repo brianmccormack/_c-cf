@@ -24,8 +24,16 @@
 
 	&__sponsor {
 		margin: 0 auto;
-		max-width: em(400px, 16px);
+		max-width: em(300px, 16px);
 		max-height: em(70px, 16px);
+
+		@include bp-sm {
+			max-width: em(350px, 16px);
+		}
+
+		@include bp-sm {
+			max-width: em(400px, 16px);
+		}		
 	}
 
 	&__sponsor__image {
@@ -50,6 +58,7 @@
 		font-size: em(24px, 16px);
 		font-weight: $extra-bold;
 		padding-bottom: em(5px, 24px);
+		letter-spacing: -0.02em;
 
 		@include bp-sm {
 			font-size: em(36px, 16px);
