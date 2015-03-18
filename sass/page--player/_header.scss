@@ -55,7 +55,7 @@
 		&:after {
 			content: "";
 			position: absolute;
-			border-top: 1px solid lighten($gray-medium, 20%);
+			border-top: 1px solid lighten($gray-medium, 25%);
 			top: em(7px, 16px);
 			width: em(40px, 16px);
 		}
@@ -93,6 +93,6 @@
 	}
 
 	&__date-location__divider {
-		color: $gray-medium;
+		color: lighten($gray-medium, 10%);
 	}
 }
