@@ -1,6 +1,6 @@
 .page--player__main {
 	@include page-min-width;
-	margin: 0 em(20px, 16px);
+	padding: 0 em(20px, 16px);
 
 	&__inner {
 		max-width: em(960px, 16px);
