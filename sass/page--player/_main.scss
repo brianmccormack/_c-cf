@@ -1,0 +1,47 @@
+.page--player__main {
+	@include page-min-width;
+	margin: 0 em(20px, 16px);
+
+	&__inner {
+		max-width: em(960px, 16px);
+		margin: 0 auto;
+	}	
+
+	&__headline-container {
+		background: $black;
+		text-align: center;
+		padding: em(2px, 16px) 0;
+
+		@include bp-md {
+			padding: em(5px, 16px) 0;
+		}
+	}
+
+	&__headline {
+		display: inline-block;
+		padding: em(5px, 16px);
+		@include clearfix;
+	}
+
+	&__headline__star,
+	&__headline__copy {
+		display: block;
+		float: left;
+	}
+
+	&__headline__star {		
+		width: em(16px, 16px);
+		fill: $yellow;
+		margin-top: em(2px, 16px);
+	}
+
+	&__headline__copy {
+		padding: em(2px, 16px) em(5px, 16px) em(4px, 16px);
+		color: $white;
+		letter-spacing: -0.02em;
+	}
+
+	&__video {
+		width: 100%;
+	}
+}
