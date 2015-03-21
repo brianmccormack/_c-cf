@@ -1,7 +1,11 @@
 .video-info {
 	background: $black;
-	padding: em(15px, 16px);
+	padding: em(10px, 16px);
 	@include clearfix;
+
+	@include bp-sm {
+		padding: em(15px, 16px);
+	}
 
 	&__time-author-container {
 		float: left;
