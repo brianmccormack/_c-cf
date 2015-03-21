@@ -51,10 +51,12 @@
 		&__share-facebook {
 			display: block;
 			height: em(16px, 16px);
+			width: em(16px, 16px);
 			@include links-svg;
 
 			@include bp-md {
 				height: em(18px, 16px);
+				width: em(18px, 16px);
 			} 
 		}
 
