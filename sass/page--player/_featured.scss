@@ -1,0 +1,50 @@
+&__featured {
+	margin-bottom: em(34px, 16px);
+
+	&__headline-container {
+		background: $black;
+		text-align: center;
+		padding: em(2px, 16px) 0;		
+
+		@include bp-md {
+			padding: em(5px, 16px) 0;
+		}
+	}
+
+	&__headline {
+		display: inline-block;
+		padding: em(5px, 16px);
+		@include clearfix;
+	}
+
+	&__headline__star,
+	&__headline__copy {
+		display: block;
+		float: left;
+	}
+
+	&__headline__star {		
+		width: em(16px, 16px);
+		fill: $yellow;
+		margin-top: em(1px, 16px);
+
+		@include bp-sm {
+			margin-top: em(2px, 16px);
+		}	
+	}
+
+	&__headline__copy {
+		padding: em(2px, 16px) em(5px, 16px) em(4px, 16px);
+		color: $white;
+		letter-spacing: -0.02em;
+		font-size: em(14px, 16px);
+
+		@include bp-sm {
+			font-size: em(16px, 16px);
+		}
+	}
+
+	&__video {
+		width: 100%;
+	}	
+}

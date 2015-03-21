@@ -1,4 +1,4 @@
-.page--player__header {
+&__header {
 	@include page-min-width;
 	padding: em(20px, 16px) em(20px, 16px);
 

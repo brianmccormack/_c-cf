@@ -2,6 +2,8 @@
 @import "_css-starter/patterns/patterns";
 
 // * Page--player *
-@import "page--player/header";
-@import "page--player/main";
-@import "page--player/main";
+.page--player {
+	@import "page--player/header";
+	@import "page--player/main";
+	@import "page--player/featured";
+}	

@@ -8,6 +8,10 @@
 		color: $white;
 		font-size: em(12px, 16px);
 
+		@include bp-sm {
+			font-size: em(14px, 16px);
+		}
+
 		&__bar {
 			color: darken($gray-medium, 25%);
 		}
@@ -19,5 +23,23 @@
 
 	&__share-views-container {
 		float: right;
+	
+		&__share-list {
+			@include clearfix;
+		}
+
+		&__share-item {
+			float: left;
+			display: block;	
+		}
+
+		&__views {
+			color: $white;
+			font-size: em(12px, 16px);
+
+			@include bp-sm {
+				font-size: em(14px, 16px);
+			}
+		}
 	}
 }
