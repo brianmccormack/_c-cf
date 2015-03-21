@@ -1,0 +1,22 @@
+.timeline {
+	margin-top: em(36px, 16px);
+
+	@include bp-max {
+		margin-top: em(44px, 16px);
+	}
+
+	&__headline {
+		font-size: em(20px, 16px);
+		font-weight: normal;
+		text-align: center;
+		letter-spacing: -0.02em;
+
+		@include bp-sm {
+			font-size: em(24px, 16px);
+		}
+
+		@include bp-md {
+			font-size: em(32px, 16px);
+		}
+	}
+}
