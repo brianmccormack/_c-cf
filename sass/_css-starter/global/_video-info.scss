@@ -11,9 +11,18 @@
 		float: left;
 		color: $white;
 		font-size: em(12px, 16px);
+		width: 75%;
 
 		@include bp-sm {
 			font-size: em(14px, 16px);
+		}
+
+		&__am-pm {
+			display: none;
+
+			@include bp-sm {
+				display: inline;
+			}
 		}
 
 		&__bar {
@@ -28,6 +37,7 @@
 	&__share-views-container {
 		float: right;
 		text-align: right;
+		width: 25%;
 	
 		&__share-list {
 			@include clearfix;
