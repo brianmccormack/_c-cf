@@ -23,6 +23,7 @@
 
 	&__share-views-container {
 		float: right;
+		text-align: right;
 	
 		&__share-list {
 			@include clearfix;
@@ -30,12 +31,37 @@
 
 		&__share-item {
 			float: left;
-			display: block;	
+			display: block;
+			
+			& + & {
+				margin-left: em(16px, 16px);
+
+				@include bp-md {
+					margin-left: em(18px, 16px);
+				}
+			}
+		}
+
+		&__share-link {
+			display: block;
+		}
+
+		&__share-twitter,
+		&__share-google,
+		&__share-facebook {
+			display: block;
+			height: em(16px, 16px);
+			@include links-svg;
+
+			@include bp-md {
+				height: em(18px, 16px);
+			} 
 		}
 
 		&__views {
 			color: $white;
 			font-size: em(12px, 16px);
+			margin-top: em(10px, 16px);
 
 			@include bp-sm {
 				font-size: em(14px, 16px);

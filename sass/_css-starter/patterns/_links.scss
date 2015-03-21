@@ -1,5 +1,5 @@
-a {
-    color: $blue;
+@mixin links {
+	color: $blue;
     text-decoration: none;
     outline: 0;
     cursor: pointer;
@@ -8,5 +8,14 @@ a {
     &:hover,
     &:focus {
         color: darken($blue, 8%);
+    }
+}
+
+@mixin links-svg {
+	fill: $blue;
+    
+    &:hover,
+    &:focus {
+        fill: darken($blue, 8%);
     }
 }
