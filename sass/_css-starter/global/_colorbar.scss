@@ -1,0 +1,35 @@
+.colorbar,
+.colorbar--featured {
+	width: 100%;
+	display: block;
+}
+
+.colorbar {	
+
+	&__f {
+		fill: $red;
+	}
+
+	&__l {
+		fill: $yellow;
+	}
+
+	&__i {
+		fill: $blue;
+	}
+
+	&__k {
+		fill: $green;
+	}
+}
+
+.colorbar,
+.colorbar--featured {
+	height: em(1px, 16px);
+}
+
+.colorbar--featured {
+	@include bp-md {
+		height: em(2px, 16px);
+	}	
+}

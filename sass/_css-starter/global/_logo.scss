@@ -1,0 +1,30 @@
+.logo-container {
+	display: block;
+}
+
+.logo {	
+	width: em(140px, 16px);
+	height: em(22px, 16px);
+
+	&__crowd,
+	&__reg {
+		fill: $white;
+	}
+
+	&__f {
+		fill: $red;
+	}
+
+	&__l {
+		fill: $yellow;
+	}
+
+	&__i {
+		fill: $blue;
+	}
+
+	&__k {
+		fill: $green;
+	}
+
+}	

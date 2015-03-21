@@ -1,0 +1,23 @@
+.video-info {
+	background: $black;
+	padding: em(15px, 16px);
+	@include clearfix;
+
+	&__time-author-container {
+		float: left;
+		color: $white;
+		font-size: em(12px, 16px);
+
+		&__bar {
+			color: darken($gray-medium, 25%);
+		}
+
+		&__author {
+			margin-top: em(10px, 16px);
+		}
+	}
+
+	&__share-views-container {
+		float: right;
+	}
+}
