@@ -1,10 +1,7 @@
-.colorbar,
-.colorbar--featured {
+.colorbar {
 	width: 100%;
 	display: block;
-}
-
-.colorbar {	
+	height: em(1px, 16px);
 
 	&__f {
 		fill: $red;
@@ -21,15 +18,4 @@
 	&__k {
 		fill: $green;
 	}
-}
-
-.colorbar,
-.colorbar--featured {
-	height: em(1px, 16px);
-}
-
-.colorbar--featured {
-	@include bp-md {
-		height: em(2px, 16px);
-	}	
 }
