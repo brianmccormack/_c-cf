@@ -35,6 +35,7 @@
 
 		&__author {
 			margin-top: em(10px, 16px);
+			@include overflow-ellipse;
 		}
 	}
 
