@@ -221,15 +221,15 @@
 		"shouldRunBless": 0,
 		"useLibsass": 0
 		},
-	"\/sass\/_css-starter\/global\/_video-info.scss": {
+	"\/sass\/_css-starter\/global\/_video-meta.scss": {
 		"createSourceMap": 0,
 		"debugStyle": 0,
 		"decimalPrecision": 10,
 		"fileType": 4,
 		"ignore": 1,
 		"ignoreWasSetByUser": 0,
-		"inputAbbreviatedPath": "\/sass\/_css-starter\/global\/_video-info.scss",
-		"outputAbbreviatedPath": "\/css\/_video-info.css",
+		"inputAbbreviatedPath": "\/sass\/_css-starter\/global\/_video-meta.scss",
+		"outputAbbreviatedPath": "\/css\/_video-meta.css",
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0,
 		"outputStyle": 3,

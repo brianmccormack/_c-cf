@@ -1,11 +1,13 @@
-.video-info {
+.video-meta {
 	background: $black;
 	padding: em(10px, 16px);
 	@include clearfix;
 
-	@include bp-sm {
-		padding: em(15px, 16px);
-	}
+	.page--player__featured & {
+		@include bp-sm {
+			padding: em(15px, 16px);
+		}
+	}	
 
 	&__time-author-container {
 		float: left;
@@ -20,8 +22,10 @@
 		&__am-pm {
 			display: none;
 
-			@include bp-sm {
-				display: inline;
+			.page--player__featured & {
+				@include bp-sm {
+					display: inline;
+				}
 			}
 		}
 

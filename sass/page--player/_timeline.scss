@@ -1,4 +1,4 @@
-.timeline {
+&__timeline {
 	margin-top: em(36px, 16px);
 
 	@include bp-max {
@@ -23,5 +23,42 @@
 		&__total {
 			font-weight: $extra-bold;
 		}
+	}
+
+	&__video-list {
+		@include clearfix;
+		width: em(300px, 16px);
+		margin: 0 auto;
+
+		@include bp-sm2 {
+			width: 620px;
+		}
+
+		@include bp-md2 {
+			width: 940px;
+		}
+	}
+
+	&__video-item {
+		float: left;
+		width: em(300px, 16px);
+		display: block;
+		margin-bottom: em(20px, 16px);
+
+		@include bp-sm2 {
+			&:nth-child(2n+2) {
+				margin-left: em(20px, 16px);
+			}
+		}
+
+		@include bp-md2 {
+			& + & {
+				margin-left: em(20px, 16px);
+			}
+
+			&:nth-child(4) {
+				margin-left: 0;
+			}
+		}	
 	}
 }
