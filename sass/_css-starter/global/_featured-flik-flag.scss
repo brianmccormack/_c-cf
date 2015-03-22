@@ -1,0 +1,27 @@
+.featured-flik-flag {
+	position: absolute;
+	background: $black;
+	padding: em(3px, 16px) em(6px, 16px) em(5px, 16px);
+	left: em(-8px, 16px);
+	top: em(4px, 16px);
+
+	&__star {
+		width: em(13px, 16px);
+		fill: $yellow;
+	}
+
+	&:before {
+		position: absolute;
+		bottom: em(-8px, 16px);
+		left: 0;
+		content: "";
+		display: block;
+		width: 0;
+		height: 0;
+		border-color: transparent;
+		border-style: solid;
+		border-width: 0 em(8px, 16px) em(8px, 16px) 0;
+		border-right-color: $black;
+		border-bottom-color: $white;
+	}
+}
