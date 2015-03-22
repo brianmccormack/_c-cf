@@ -2,8 +2,9 @@
 	position: absolute;
 	background: $black;
 	padding: em(3px, 16px) em(6px, 16px) em(5px, 16px);
-	left: em(-8px, 16px);
+	left: em(-9px, 16px);
 	top: em(4px, 16px);
+	border: 1px solid $white;
 
 	&__star {
 		width: em(13px, 16px);
@@ -12,8 +13,8 @@
 
 	&:before {
 		position: absolute;
-		bottom: em(-8px, 16px);
-		left: 0;
+		bottom: em(-9px, 16px);
+		left: em(-1px, 16px);
 		content: "";
 		display: block;
 		width: 0;
