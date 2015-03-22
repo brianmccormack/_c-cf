@@ -1,6 +1,10 @@
 &__header {
-	@include page-min-width;
-	padding: em(20px, 16px) em(20px, 16px);
+	@include page-min-width;	
+	padding: em(20px, 16px) em(10px, 16px);
+
+	@include bp-sm {
+		padding: em(20px, 16px) em(20px, 16px);
+	}	
 
 	@include bp-md {
 		padding: em(30px, 16px) em(20px, 16px);	

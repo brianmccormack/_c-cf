@@ -1,6 +1,10 @@
 &__main {
 	@include page-min-width;
-	padding: 0 em(20px, 16px);
+	padding: 0 em(10px, 16px);
+
+	@include bp-sm {
+		padding: 0 em(20px, 16px);
+	}
 
 	&__inner {
 		max-width: em(960px, 16px);
