@@ -34,8 +34,9 @@
 		}
 
 		&__author {
-			margin-top: em(10px, 16px);
+			margin-top: em(6px, 16px);
 			@include overflow-ellipse;
+			line-height: 1.4;
 		}
 	}
 
