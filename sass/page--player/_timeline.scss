@@ -31,11 +31,11 @@
 		margin: 0 auto;
 
 		@include bp-sm2 {
-			width: 620px;
+			width: em(620px, 16px);
 		}
 
 		@include bp-md2 {
-			width: 940px;
+			width: em(940px, 16px);
 		}
 	}
 
