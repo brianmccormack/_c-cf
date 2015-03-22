@@ -66,5 +66,7 @@
 
 	&__video {
 		width: 100%;
+		height: em(188px, 16px);
+		background: $black;
 	}
 }
