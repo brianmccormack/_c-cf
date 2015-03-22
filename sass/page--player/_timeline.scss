@@ -69,4 +69,10 @@
 		height: em(188px, 16px);
 		background: $black;
 	}
+
+	&__advertisement {
+		width: em(300px, 16px);
+		height: em(250px, 16px);
+		overflow: hidden;
+	}
 }
