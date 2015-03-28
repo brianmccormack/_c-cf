@@ -44,9 +44,11 @@
 		width: em(300px, 16px);
 		height: em(250px, 16px);
 		display: block;
-		margin: em(20px, 16px) 0;
+		margin: em(15px, 16px) 0;
 
 		@include bp-sm2 {
+			margin: em(20px, 16px) 0;
+
 			&:nth-child(2n+2) {
 				margin-left: em(20px, 16px);
 			}
