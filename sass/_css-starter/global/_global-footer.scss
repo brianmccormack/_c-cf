@@ -123,7 +123,7 @@
 	}
 
 	&__copyright {
-		color: lighten($black, 50%);
+		color: $gray-medium;
 		font-size: em(12px, 16px);
 	}
 }

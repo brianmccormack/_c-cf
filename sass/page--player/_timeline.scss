@@ -10,7 +10,7 @@
 		font-weight: normal;
 		text-align: center;
 		letter-spacing: -0.02em;
-		margin-bottom: em(20px, 16px);
+		margin: em(20px, 16px) 0 em(10px, 16px);
 
 		@include bp-sm {
 			font-size: em(24px, 16px);
@@ -44,8 +44,7 @@
 		width: em(300px, 16px);
 		height: em(250px, 16px);
 		display: block;
-		margin-bottom: em(20px, 16px);
-		position: relative;
+		margin: em(20px, 16px) 0;
 
 		@include bp-sm2 {
 			&:nth-child(2n+2) {
@@ -58,10 +57,26 @@
 				margin-left: em(20px, 16px);
 			}
 
-			&:nth-child(4) {
+			&:nth-child(3n+4) {
 				margin-left: 0;
 			}
 		}	
+	}
+
+	&__sponsor {
+		position: absolute;
+		top: em(-20px, 16px);
+		font-size: em(12px, 16px);
+		text-transform: uppercase;
+		color: $gray-dark;
+		font-style: normal;
+		width: 100%;
+		text-align: center;
+	}
+
+	&__sponsor-container {
+		position: relative;
+		display: block;
 	}
 
   	&__video-container {
