@@ -49,20 +49,17 @@
 		display: block;		
 	}
 
-	&__app-badges__apple,
-	&__app-badges__android {
-		height: em(40px, 16px);
-	}
-
 	&__app-badges__apple {
 		width: em(135px, 16px);
 	}
 
 	&__app-badges__android {
 		width: em(113px, 16px);
+		height: em(40px, 16px);
 
 		@include bp-sm {
 			width: em(135px, 16px);
+			height: auto;
 		}
 	}		
 
