@@ -22,7 +22,7 @@
 	&__app-badges-list {
 		margin: 0 0 em(30px, 16px);
 
-		@include bp-sm2 {
+		@include bp-sm {
 			width: 33%;
 			float: left;
 		}
@@ -36,7 +36,7 @@
 			margin-left: em(10px, 16px);
 		}
 
-		@include bp-sm2 {
+		@include bp-sm {
 
 			& + & {
 				display: block;
@@ -60,6 +60,10 @@
 
 	&__app-badges__android {
 		width: em(113px, 16px);
+
+		@include bp-sm {
+			width: em(135px, 16px);
+		}
 	}		
 
 	// LINKS - GENERIC
@@ -74,7 +78,7 @@
 	&__social-misc-list-container {
 		@include clearfix;
 		
-		@include bp-sm2 {
+		@include bp-sm {
 			width: 66%;
 			float: left;
 		}		
