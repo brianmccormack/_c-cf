@@ -1,0 +1,96 @@
+.global-footer {
+	@include page-min-width;
+	background: $black;
+	padding: 0 em(10px, 16px);
+
+	@include bp-sm {
+		padding: 0 em(20px, 16px);
+	}
+	
+	&__inner {
+		@include page-max-width;
+		padding: em(20px, 16px) 0;
+	}
+
+	&__link-section-container {
+		@include clearfix;
+		margin-top: em(30px, 16px);
+	}
+
+	&__app-badges-list,
+	&__misc-links-list,
+	&__social-links-list {
+		
+		@include bp-sm2 {
+			float: left;
+			width: 33%;
+		}	
+	}
+
+	// * APP BADGES
+	
+	&__app-badges-list {
+		margin: 0 0 em(30px, 16px);
+	}
+
+	&__app-badges-item {
+
+		& + & {
+			margin-top: em(10px, 16px);
+		}
+	}
+
+	&__app-badges__apple,
+	&__app-badges__android {
+		width: em(135px, 16px);
+	}
+
+	// LINKS - GENERIC
+	
+	&__text-link {
+		color: $white;
+		display: inline-block;
+	}
+
+	
+	// * SOCIAL LINKS 
+
+	&__social-links-list {
+		margin-bottom: em(30px, 16px);
+	}
+
+	&__social-links-item {
+		font-size: em(14px, 16px);
+
+		& + & {
+			margin-top: em(10px, 16px);
+		}
+	}
+
+	&__social-links__icon {
+		display: inline-block;
+		fill: $white;
+		height: em(16px, 16px);
+		width: em(16px, 16px);
+		margin-right: em(10px, 16px);
+	}
+
+	// * MISC LINKS 
+
+	&__misc-links-list {
+		margin-bottom: em(30px, 16px);
+	}
+
+	&__misc-links-item {
+		font-size: em(14px, 16px);
+
+		& + & {
+			margin-top: em(10px, 16px);
+		}
+	}
+
+	&__copyright {
+		color: lighten($black, 50%);
+		font-size: em(12px, 16px);
+	}
+}
