@@ -3,7 +3,7 @@
 	background: $black;
 	padding: 0 em(10px, 16px);
 
-	@include bp-sm {
+	@include bp-sm2 {
 		padding: 0 em(20px, 16px);
 	}
 	
@@ -22,7 +22,7 @@
 	&__app-badges-list {
 		margin: 0 0 em(30px, 16px);
 
-		@include bp-sm {
+		@include bp-sm2 {
 			width: 33%;
 			float: left;
 		}
@@ -36,7 +36,7 @@
 			margin-left: em(10px, 16px);
 		}
 
-		@include bp-sm {
+		@include bp-sm2 {
 
 			& + & {
 				display: block;
@@ -57,9 +57,9 @@
 		width: em(113px, 16px);
 		height: em(40px, 16px);
 
-		@include bp-sm {
+		@include bp-sm2 {
 			width: em(135px, 16px);
-			height: auto;
+			height: 1%;
 		}
 	}		
 
@@ -75,7 +75,7 @@
 	&__social-misc-list-container {
 		@include clearfix;
 		
-		@include bp-sm {
+		@include bp-sm2 {
 			width: 66%;
 			float: left;
 		}		
