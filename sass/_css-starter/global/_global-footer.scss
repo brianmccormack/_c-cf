@@ -17,32 +17,41 @@
 		margin-top: em(30px, 16px);
 	}
 
-	&__app-badges-list,
-	&__misc-links-list,
-	&__social-links-list {
-		
-		@include bp-sm2 {
-			float: left;
-			width: 33%;
-		}	
-	}
-
 	// * APP BADGES
 	
 	&__app-badges-list {
 		margin: 0 0 em(30px, 16px);
+
+		@include bp-sm2 {
+			width: 33%;
+			float: left;
+		}
 	}
 
 	&__app-badges-item {
+		vertical-align: top;
+		display: inline-block;
 
 		& + & {
-			margin-top: em(10px, 16px);
+			margin-left: em(10px, 16px);
 		}
+
+		@include bp-sm2 {
+
+			& + & {
+				display: block;
+				margin: em(10px, 16px) 0 0;
+			}			
+		}
+	}
+
+	&__app-badges-link {
+		display: block;		
 	}
 
 	&__app-badges__apple,
 	&__app-badges__android {
-		width: em(135px, 16px);
+		height: em(40px, 16px);
 	}
 
 	// LINKS - GENERIC
@@ -52,11 +61,23 @@
 		display: inline-block;
 	}
 
+	// Containter for social and misc uls
+
+	&__social-misc-list-container {
+		@include clearfix;
+		
+		@include bp-sm2 {
+			width: 66%;
+			float: left;
+		}		
+	}
 	
 	// * SOCIAL LINKS 
 
 	&__social-links-list {
 		margin-bottom: em(30px, 16px);
+		float: left;
+		width: 50%;		
 	}
 
 	&__social-links-item {
@@ -69,16 +90,19 @@
 
 	&__social-links__icon {
 		display: inline-block;
+		@include links-svg;
 		fill: $white;
 		height: em(16px, 16px);
 		width: em(16px, 16px);
-		margin-right: em(10px, 16px);
+		margin-right: em(10px, 16px);		
 	}
 
 	// * MISC LINKS 
 
 	&__misc-links-list {
 		margin-bottom: em(30px, 16px);
+		float: left;
+		width: 50%;
 	}
 
 	&__misc-links-item {

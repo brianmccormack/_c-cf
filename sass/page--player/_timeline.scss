@@ -28,7 +28,7 @@
 	&__video-list {
 		@include clearfix;
 		width: em(300px, 16px);
-		margin: 0 auto;
+		margin: 0 auto em(40px, 16px);
 
 		@include bp-sm2 {
 			width: em(620px, 16px);
