@@ -1,7 +1,7 @@
 // * CSS-STARTER / Patterns *
 @import "_css-starter/patterns/manifest";
 
-// * Page--player *
+// * Page--home *
 .page--home {
-	
+	@import "page--home/header";
 }
