@@ -69,7 +69,10 @@
 		}
 
 		&__copy-container {
-			display: block;
+			
+			@include bp-sm2 {
+				display: block;
+			}	
 		}		
 	}
 }	
