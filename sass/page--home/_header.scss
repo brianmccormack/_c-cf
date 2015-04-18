@@ -20,14 +20,18 @@
 
 	&__headline-container {
 		position: absolute;
-		padding: 16% em(30px, 16px) 0;
+		padding: 20% em(30px, 16px) 0;
 		text-align: center;
 		color: $white;
 		z-index: 999;
 		width: 100%;
 
 		@include bp-md {
-			padding-top: 18%;
+			padding-top: 22%;
+		}
+
+		@include bp-md2 {
+			padding-top: 20%;
 		}
 	}
 
@@ -43,6 +47,10 @@
 
 		@include bp-sm2 {
 			font-size: $font-size-xxx-large;
+		}
+
+		@include bp-md {
+			font-size: em(56px, 16px);
 		}
 	}
 
