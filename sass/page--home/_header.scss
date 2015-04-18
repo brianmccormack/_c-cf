@@ -24,7 +24,7 @@
 
 	&__headline-container {
 		position: absolute;
-		padding: 20% em(30px, 16px) 0;
+		padding: 20% em(10px, 16px) 0;
 		text-align: center;
 		color: $white;
 		z-index: 999;
@@ -38,7 +38,7 @@
 
 	&__headline {
 		font-weight: $extra-bold;
-		font-size: $font-size-large;
+		font-size: $font-size-x-large;
 		margin-bottom: em(15px, 26px);
 		letter-spacing: -0.01em;
 
