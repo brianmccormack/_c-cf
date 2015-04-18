@@ -58,6 +58,7 @@
 	&__subheadline {
 		font-size: $font-size-regular;
 		line-height: 1.25em;
+		padding:0 em(40px, 16px);
 
 		@include bp-sm {
 			font-size: $font-size-medium;
@@ -65,10 +66,6 @@
 
 		@include bp-sm2 {
 			font-size: $font-size-large;
-		}
-
-		&__copy-container {
-			display: block;
 		}
 	}
 }	
