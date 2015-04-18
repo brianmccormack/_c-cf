@@ -67,5 +67,9 @@
 		@include bp-sm2 {
 			font-size: $font-size-large;
 		}
+
+		&__copy-container {
+			display: block;
+		}		
 	}
 }	
