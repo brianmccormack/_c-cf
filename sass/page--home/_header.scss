@@ -63,10 +63,22 @@
 		}
 	}
 
+	&__subheadline--mobile {
+
+		@include bp-sm {
+			display: none;
+		}
+	}
+
 	&__subheadline {
+		display: none;		
 		font-size: $font-size-regular;
 		line-height: 1.25em;
 		padding:0 em(20px, 16px);
+
+		@include bp-sm {
+			display: block;
+		}
 
 		@include bp-sm {
 			font-size: $font-size-medium;
