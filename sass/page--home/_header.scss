@@ -46,10 +46,11 @@
 	&__headline {
 		font-weight: $extra-bold;
 		font-size: $font-size-x-large;
-		margin-bottom: em(15px, 26px);
+		margin-bottom: em(8px, 26px);
 		letter-spacing: -0.01em;
 
 		@include bp-sm {
+			margin-bottom: em(15px, 26px);
 			font-size: $font-size-xx-large;
 		}
 
