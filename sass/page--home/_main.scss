@@ -28,7 +28,6 @@
 		&__img-container {
 			width: 30%;
 			height: 100%;
-			background: red;
 			content: "";
 		}
 
@@ -50,20 +49,32 @@
 			display: block;
 		}
 
-		&__date-location {			
+		&__num-of-fliks {
 			padding-bottom: em(12px, 16px);
 		}
 	}
 }
 
-.sam-smith {
-	background: url(../images/page--home/sam-smith.png);
+
+// Featured Events
+
+// Patterns
+@mixin img-container-bg {
 	background-size: cover;
 	background-position: center top;
 }
 
+.sam-smith {
+	background: url(../images/page--home/sam-smith.png);
+	@include img-container-bg;
+}
+
 .paul-rogers {
 	background: url(../images/page--home/paul-rogers.png);
-	background-size: cover;
-	background-position: center top;
+	@include img-container-bg;
+}
+
+.ricky-martin {
+	background: url(../images/page--home/ricky-martin.png);
+	@include img-container-bg;
 }
