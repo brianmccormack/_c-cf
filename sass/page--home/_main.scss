@@ -35,12 +35,13 @@
 		&__content-container {
 			padding: em(20px, 16px);
 			width: 80%;
-			line-height: 1.2em;
+			line-height: 1.3em;
 			font-size: $font-size-regular;
 		}
 
 		&__headline,
-		&__date-location {
+		&__date-location,
+		&__presented-by {
 			color: $gray-dark;
 		}
 
