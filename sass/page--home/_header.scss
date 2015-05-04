@@ -5,7 +5,7 @@
 	background: url(../video/crowd.jpg);
 	background-size: cover;
 
-	@include bp-md1 {
+	@include bp-md {
 		padding-top: 26em;
 		top: 0;
 		overflow: hidden;
@@ -48,10 +48,6 @@
 		top: 0;
 
 		@include bp-md {
-			padding-top: 22%;
-		}
-
-		@include bp-md1 {
 			padding-top: 10em;
 		}
 	}
