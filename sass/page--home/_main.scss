@@ -13,7 +13,7 @@
 	}
 
 	&__featured-item {
-		border-bottom: 1px solid $gray-medium;
+		margin: em(10px, 16px);
 
 		&__link {
 			display: table;
@@ -32,7 +32,7 @@
 		}
 
 		&__content-container {
-			padding: em(20px, 16px);
+			padding: em(16px, 16px) em(5px, 16px) em(16px, 16px) em(20px, 16px);
 			width: 70%;
 			line-height: 1.4em;
 			font-size: $font-size-regular;
