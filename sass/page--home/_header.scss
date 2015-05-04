@@ -6,7 +6,7 @@
 	background-size: cover;
 
 	@include bp-md1 {
-		padding-top: 63vh;
+		padding-top: 22em;
 		top: 0;
 		overflow: hidden;
 	}
@@ -52,7 +52,7 @@
 		}
 
 		@include bp-md1 {
-			padding-top: 24vh;
+			padding-top: 8em;
 		}
 	}
 
