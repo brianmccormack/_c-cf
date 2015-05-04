@@ -1,7 +1,13 @@
 &__main {
+	@include page-min-width;
+	background: $gray-light;
+
+	&__inner {
+		@include page-max-width;
+	}
 
 	&__headline {
-		margin: em(20px, 16px);
+		padding: em(20px, 16px) em(20px, 16px) em(12px, 16px);
 		text-align: center;
 		font-size: $font-size-x-large;
 		letter-spacing: -0.01em;
@@ -9,11 +15,25 @@
 
 		@include bp-sm2 {
 			font-size: $font-size-xx-large;
-		}		
+		}
+	}
+
+	&__featured-list {
+		padding-bottom: em(40px, 16px);
 	}
 
 	&__featured-item {
 		margin: em(10px, 16px);
+		background: $white;
+		box-shadow: 0 2px 6px #c4c4c4; 
+
+		@include bp-sm {
+			margin: em(20px, 16px);
+		}
+
+		@include bp-max {
+			margin-left: 0;
+		}
 
 		&__link {
 			display: table;
@@ -32,10 +52,14 @@
 		}
 
 		&__content-container {
-			padding: em(16px, 16px) em(5px, 16px) em(16px, 16px) em(20px, 16px);
+			padding: em(16px, 16px) 0 em(16px, 16px) em(20px, 16px);
 			width: 70%;
 			line-height: 1.4em;
 			font-size: $font-size-regular;
+
+			@include bp-sm2 {
+				padding: em(30px, 16px);
+			}
 		}
 
 		&__headline,
@@ -47,11 +71,34 @@
 		&__headline {
 			padding-bottom: em(12px, 16px);
 			display: block;
+
+			@include bp-sm {
+				font-size: $font-size-large;
+			}
+
+			@include bp-sm2 {
+				font-size: $font-size-x-large;
+			}
 		}
 
 		&__presented-by {
 			color: $gray-medium;
 			padding-bottom: em(12px, 16px);
+		}
+
+		&__num-of-fliks {
+
+			@include bp-sm2 {
+				font-size: $font-size-large;
+				padding: em(16px, 16px) 0 0;
+			}
+
+			&__count {
+
+				@include bp-sm2 {
+					font-weight: $extra-bold;
+				}
+			}
 		}
 	}
 }
