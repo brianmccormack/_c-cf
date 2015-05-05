@@ -31,6 +31,10 @@
 			position: absolute;
 			width: 100%;
 			bottom: 0;
+
+			&::-webkit-media-controls {
+				display: none !important;
+			}
 		}
 
 		@include bp-max {
