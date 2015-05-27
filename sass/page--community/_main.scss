@@ -10,18 +10,19 @@
 		max-width: $bp-sm2;
 		margin: 0 auto;
 		line-height: 1.3em;
-	}
-
-	@include bp-sm {
 		padding: em(40px, 16px) 0;
 	}
 }
 
 &__headline--primary {
-	font-size: $font-size-xx-large;
+	font-size: $font-size-x-large;
 	margin: em(5px, 16px) 0 em(10px, 16px);
 	line-height: 1.2em;
-	font-weight: $normal;
+
+	@include bp-sm2 {
+		font-weight: $normal;
+		font-size: $font-size-xx-large;
+	}
 }
 
 &__rules-list--primary {
@@ -30,8 +31,13 @@
 
 &__rules-item--primary {
 	margin: em(20px, 16px) 0;
-	font-size: $font-size-xx-large;
+	font-size: $font-size-x-large;
 	text-align: center;
+
+	@include bp-sm2 {
+		font-weight: $normal;
+		font-size: $font-size-xx-large;
+	}	
 }
 
 &__main {
@@ -63,7 +69,8 @@
 	margin: 0 0 em(10px, 16px);
 	font-weight: $normal;
 	line-height: 1.2em;
-	padding-bottom: em(5px, 16px);
+	padding-bottom: em(10px, 16px);
+	border-bottom: 2px solid $gray-light;
 }
 
 &__rules-list--secondary {
