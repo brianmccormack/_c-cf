@@ -1,5 +1,6 @@
 &__main {
 	@include page-min-width;
+	background: $gray-light;
 
 	&__inner {
 		@include page-max-width;
@@ -74,6 +75,7 @@
 		&__date-location,
 		&__presented-by {
 			color: $gray-dark;
+			font-weight: $normal;
 		}
 
 		&__headline {
@@ -99,13 +101,6 @@
 			@include bp-sm2 {
 				font-size: $font-size-large;
 				padding: em(16px, 16px) 0 0;
-			}
-
-			&__count {
-
-				@include bp-sm2 {
-					font-weight: $extra-bold;
-				}
 			}
 		}
 	}

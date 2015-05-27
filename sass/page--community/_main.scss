@@ -1,0 +1,75 @@
+&__header {
+	@include page-min-width;
+	padding: 0 em(10px, 16px);
+
+	@include bp-sm {
+		padding: 0 em(20px, 16px);
+	}
+
+	&__inner {
+		max-width: $bp-sm2;
+		margin: 0 auto;
+		line-height: 1.3em;
+	}
+
+	@include bp-sm {
+		padding: em(40px, 16px) 0;
+	}
+}
+
+&__headline--primary {
+	font-size: $font-size-xx-large;
+	margin: em(5px, 16px) 0 em(10px, 16px);
+	line-height: 1.2em;
+	font-weight: $normal;
+}
+
+&__rules-list--primary {
+	margin: 0 0 em(10px, 16px);
+}
+
+&__rules-item--primary {
+	margin: em(20px, 16px) 0;
+	font-size: $font-size-xx-large;
+	text-align: center;
+}
+
+&__main {
+	@include page-min-width;
+	padding: em(10px, 16px);
+
+	@include bp-sm {
+		padding: 0 em(20px, 16px);
+	}
+
+	&__inner {
+		max-width: $bp-sm2;
+		margin: 0 auto;
+		line-height: 1.3em;
+	}
+
+	&__section {
+		margin: em(30px, 16px) 0;
+	}
+}
+
+&__guidelines-below {
+	padding: 0 0 em(20px, 16px);
+	font-style: italic;
+}
+
+&__headline--secondary {
+	font-size: $font-size-x-large;
+	margin: 0 0 em(10px, 16px);
+	font-weight: $normal;
+	line-height: 1.2em;
+	padding-bottom: em(5px, 16px);
+}
+
+&__rules-list--secondary {
+	margin: em(10px, 16px) 0 em(10px, 16px) 0;
+}
+
+&__rules-item--secondary {
+	padding: 0 0 em(20px, 16px);
+}
