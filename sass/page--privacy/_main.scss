@@ -1,0 +1,42 @@
+&__main {
+	@include page-min-width;
+	padding: 0 em(20px, 16px);
+
+	&__inner {
+		max-width: $bp-sm2;
+		margin: 0 auto;
+		line-height: 1.3em;
+	}
+
+	&__header {
+		line-height: 1.3em;
+		padding: em(40px, 16px) 0;
+		text-align: center;
+	}
+
+	&__section {
+		margin: em(30px, 16px) 0;
+	}
+}
+
+&__headline--primary {
+	font-size: $font-size-xx-large;
+	margin: 0 0 em(5px, 16px);	
+	font-weight: $normal;
+	line-height: 1.2em;
+}
+
+&__headline--secondary {
+	font-size: $font-size-x-large;
+	margin: 0 0 em(10px, 16px);
+	font-weight: $normal;
+	line-height: 1.2em;
+}
+
+&__list {
+	margin: em(10px, 16px) 0 em(10px, 16px) 0;
+}
+
+&__item {
+	padding: 0 0 em(20px, 16px);
+}
