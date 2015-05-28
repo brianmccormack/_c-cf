@@ -4,13 +4,13 @@
 
 	&__inner {
 		max-width: $bp-sm2;
-		margin: 0 auto;
+		margin: 0 auto em(60px, 16px);
 		line-height: 1.3em;
 	}
 
 	&__header {
 		line-height: 1.3em;
-		padding: em(40px, 16px) 0;
+		padding: em(60px, 16px) 0 em(40px, 16px);
 		text-align: center;
 	}
 
@@ -37,6 +37,7 @@
 	margin: em(10px, 16px) 0 em(10px, 16px) 0;
 }
 
-&__item {
+&__item,
+&__paragraph {
 	padding: 0 0 em(20px, 16px);
 }
