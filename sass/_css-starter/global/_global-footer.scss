@@ -2,6 +2,7 @@
 	@include page-min-width;
 	background: $black;
 	padding: 0 em(10px, 16px);
+	line-height: 1.3em;
 
 	@include bp-sm {
 		padding: 0 em(20px, 16px);
