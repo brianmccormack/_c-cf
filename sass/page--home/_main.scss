@@ -58,6 +58,8 @@
 			width: 30%;
 			height: 100%;
 			content: "";
+			background-size: cover;
+			background-position: center top;
 		}
 
 		&__content-container {
@@ -106,28 +108,4 @@
 			}
 		}
 	}
-}
-
-
-// Featured Events
-
-// Patterns
-@mixin img-container-bg {
-	background-size: cover;
-	background-position: center top;
-}
-
-.sam-smith {
-	background: url(../images/page--home/sam-smith.png);
-	@include img-container-bg;
-}
-
-.paul-rogers {
-	background: url(../images/page--home/paul-rogers.png);
-	@include img-container-bg;
-}
-
-.ricky-martin {
-	background: url(../images/page--home/ricky-martin.png);
-	@include img-container-bg;
 }
